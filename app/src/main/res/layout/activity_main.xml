@@ -12,8 +12,8 @@
         android:layout_height="80dp"
         android:layout_marginBottom="24dp"
         android:gravity="center"
-        android:hint="number:"
-        android:inputType="number"
+        android:hint="enter number:"
+        android:inputType="number|numberDecimal|numberSigned"
         android:textSize="32sp" />
 
     <LinearLayout
@@ -27,8 +27,9 @@
             android:id="@+id/plusbtn"
             android:layout_width="0dp"
             android:layout_height="80dp"
-            android:layout_weight="1"
             android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="plusnum"
             android:text="+"
             android:textSize="24sp" />
 
@@ -36,8 +37,9 @@
             android:id="@+id/minusbtn"
             android:layout_width="0dp"
             android:layout_height="80dp"
-            android:layout_weight="1"
             android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="minusnum"
             android:text="-"
             android:textSize="24sp" />
 
@@ -45,8 +47,9 @@
             android:id="@+id/multbtn"
             android:layout_width="0dp"
             android:layout_height="80dp"
-            android:layout_weight="1"
             android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="multnum"
             android:text="*"
             android:textSize="24sp" />
 
@@ -55,6 +58,7 @@
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_weight="1"
+            android:onClick="divnum"
             android:text="/"
             android:textSize="24sp" />
     </LinearLayout>
@@ -72,6 +76,7 @@
             android:layout_height="80dp"
             android:layout_marginEnd="16dp"
             android:layout_weight="1"
+            android:onClick="clear"
             android:text="A/C"
             android:textSize="24sp" />
 
@@ -81,6 +86,7 @@
             android:layout_height="80dp"
             android:layout_marginStart="16dp"
             android:layout_weight="1"
+            android:onClick="equals"
             android:text="="
             android:textSize="24sp" />
     </LinearLayout>
